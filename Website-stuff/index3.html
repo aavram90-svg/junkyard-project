@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    
+
+<select  id="cars" onchange="GoToPage()">
+    <option value="">Select a car</option>
+    <option value="ford.html"> Ford</option>
+
+    <option value="Buick"> Buick </option>
+
+<option value="Cadillac"> Cadillac </option>
+
+<option value="Chevrolet"> Chevrolet </option>
+
+<option value="Chrysler"> Chrysler </option>
+
+<option value="Dodge"> Dodge </option>
+
+<option value="Jeep"> Jeep </option>
+
+<option value="Ram"> Ram </option>
+
+</select>
+
+<script>
+    function GoToPage(){
+        let selectedPage=document.getElementById("cars").value;
+
+if(selectedPage !== ""){
+    window.location.href = selectedPage;
+  
+}
+
+    }
+</script> 
+
+</body>
+</html>
